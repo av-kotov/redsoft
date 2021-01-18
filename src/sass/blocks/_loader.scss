@@ -1,0 +1,24 @@
+.cssload-container {
+  display: flex;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.cssload-zenith {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 2px 2px 1px rgb(255, 255, 255);
+  animation: cssload-spin 690ms infinite linear;
+}
+
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

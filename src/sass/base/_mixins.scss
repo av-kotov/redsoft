@@ -1,0 +1,13 @@
+@mixin style-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin page-wrapper {
+  padding-left: $padding-desktop;
+  padding-right: $padding-desktop;
+}
+
+@mixin animation {
+  transition: all 0.5s ease;
+}

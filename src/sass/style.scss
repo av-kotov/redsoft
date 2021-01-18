@@ -1,0 +1,55 @@
+@import 'base/font';
+@import 'base/mixins';
+@import 'base/variables';
+@import "../../node_modules/normalize.css/normalize";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+// .container {
+//     width: 1216px;
+// }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+  @include style-reset;
+     width: 100%;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $color-text;
+    background-color: $background-primary;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    line-height: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  svg,
+  picture {
+    font-size: 0;
+    line-height: 0;
+  }
+
+
+  @import 'blocks/header';
+  @import 'blocks/btn';
+  @import 'blocks/footer';
+  @import 'blocks/products';
+  @import 'blocks/loader';

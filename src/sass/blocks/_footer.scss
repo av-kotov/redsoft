@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $color-border;
+  background-color: $background-secondary;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  &__wrapper {
+    display: flex;
+    width: $desktop-width;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 48px;
+  }
+}
+
+.contacts {
+  display: flex;
+  min-width: 448px;
+  margin-left: auto;
+  &__tel {
+    display: flex;
+    min-width: 163px;
+    align-items: center;
+    & svg {
+      margin-right: 9px;
+    }
+    &-link {
+      color: $secondary;
+    }
+  }
+  &__adress {
+    display: flex;
+    min-width: 235px;
+    align-items: center;
+    margin-left: auto;
+
+    & svg {
+      margin-top: 1px;
+      margin-right: 11px;
+    }
+  }
+}

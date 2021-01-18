@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>redsoft</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <img src="img/logo-head.png" alt="Логотип">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О галерее</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header__search search" action="#">
+        <input class="search__input" type="search" placeholder="Поиск по названию картины">
+        <button class="btn search-btn" type="submit">Найти</button>
+      </form>
+    </div>
+  </header>
+<body>
+  <main class="main">
+    <h1 class="main__title">Картины эпохи Возрождения</h1>
+    <section class="products">
+      <ul class="products__list">
+        <li class="products__item">
+          <a class="products__link" href="#">
+             <img src="img/venera.jpg" alt="«Рождение Венеры»">
+          </a>
+          <h2 class="products__title">«Рождение Венеры»</h2>
+          <p class="products__author">Сандро Боттичелли</p>
+          <div class="products__price-container">
+            <div class="products__wrapper products__wrapper--sale">
+              <span class="products__price products__price--old">2 000 000 $</span>
+              <span class="products__price products__price--current">1 000 000 $</span>
+            </div>
+            <button class="btn buy-btn" type="button" data-id="1">Купить</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <a class="products__link" href="#">
+             <img src="img/secret.jpg" alt="«Тайная вечеря»">
+          </a>
+          <h2 class="products__title">«Тайная вечеря»</h2>
+          <p class="products__author">Леонардо да Винчи</p>
+          <div class="products__price-container">
+            <div class="products__wrapper">
+              <span class="products__price products__price--current">3 000 000 $</span>
+            </div>
+            <button class="btn buy-btn" type="button" data-id="2">Купить</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <a class="products__link" href="#" >
+            <img src="img/newborn.jpg" alt="«Сотворение Адама»">
+          </a>
+          <h2 class="products__title">«Сотворение Адама»</h2>
+          <p class="products__author">Микеланджело</p>
+          <div class="products__price-container">
+            <div class="products__wrapper products__wrapper--sale">
+              <span class="products__price products__price--old">6 000 000 $</span>
+              <span class="products__price products__price--current">5 000 000 $</span>
+            </div>
+            <button class="btn buy-btn" type="button" data-id="3">Купить</button>
+          </div>
+        </li>
+        <li class="products__item products__item--sold">
+          <a class="products__link" href="#">
+              <img src="img/lesson.jpg" alt="«Урок анатомии»">
+          </a>
+          <h2 class="products__title">«Урок анатомии»</h2>
+          <p class="products__author">Рембрандт</p>
+          <div class="products__price-container products__price-container--sold">
+            <p class="products__sold-text">Продана на аукционе</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="#" aria-label="Логотип The Famous">
+            <img src="img/logo-footer.png" alt="Логотип">
+          </a>
+          <div class="footer__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Доставка</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Оплата</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О галерее</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts contacts">
+            <div class="contacts__tel">
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <a class="contacts__tel-link" href="tel:+74955555555">+7 (495) 555-55-55</a>
+            </div>
+            <div class="contacts__adress">
+              <svg width="10" height="14">
+                <use xlink:href="img/sprite.svg#icon-adress"></use>
+              </svg>
+              <adress class="contacts__adress-text">г. Москва, ул. Расплетина, 24</adress>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <template id="preloader">
+        <div class="cssload-container">
+          <div class="cssload-zenith"></div>
+        </div>
+      </template>
+      <template id="card">
+        <li class="products__item">
+          <a class="products__link" href="#">
+               <img src="" alt="">
+          </a>
+          <h2 class="products__title"></h2>
+          <p class="products__author"></p>
+        </li>
+      </template>
+      <template id="current">
+        <div class="products__price-container">
+          <div class="products__wrapper">
+            <span class="products__price products__price--current"></span>
+          </div>
+          <button class="btn buy-btn" type="button">Купить</button>
+        </div>
+      </template>
+      <template id="sale">
+        <div class="products__price-container">
+          <div class="products__wrapper products__wrapper--sale">
+            <span class="products__price products__price--old"></span>
+            <span class="products__price products__price--current"></span>
+          </div>
+          <button class="btn buy-btn" type="button">Купить</button>
+        </div>
+      </template>
+      <template>
+        <li class="products__item products__item--sold">
+          <a class="products__link" href="#">
+               <img src="" alt="">
+          </a>
+          <h2 class="products__title"></h2>
+          <p class="products__author"></p>
+          <div class="products__price-container products__price-container--sold">
+            <p class="products__sold-text">Продана на аукционе</p>
+          </div>
+        </li>
+      </template>
+    <script src="js/script.js"></script>
+</body>
+</html>

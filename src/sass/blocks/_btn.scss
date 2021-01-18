@@ -1,0 +1,57 @@
+.btn {
+  display: block;
+  min-height: 48px;
+  border: none;
+  background-color: $color-btn;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover;
+  }
+
+  &:active {
+    background-color: $color-btn-active;
+  }
+
+  &:disabled {
+    background-color: $color-btn-disabled;
+  }
+}
+
+.search-btn {
+  width: 122px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 13px 5px 14px;
+}
+
+.buy-btn {
+  position: relative;
+  width: 112px;
+  padding: 14px 5px 13px;
+  margin-left: auto;
+
+  &--in-basket {
+    padding-left: 28px;
+    background-color: $color-btn-active;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 17px;
+      left: 10px;
+      width: 16px;
+      height: 13px;
+      background-image: url("../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
